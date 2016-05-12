@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">orion-node</h1>
+          <h3 class="report-date">Thursday, May 12 2016, 02:01pm</h3>
+        </div>
+        <div class="quick-summary-cnt">
+            <ul class="list-unstyled quick-summary">
+              <li class="qs-item summary-duration" title="Duration">52<span>MS</span></li>
+              <li class="qs-item summary-suites" title="Suites">4</li>
+              <li class="qs-item summary-tests" title="Tests">3</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">0</li>
+              <li class="qs-item summary-failures" title="Failed" data-filter="failed">3</li>
+              <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+            </ul>        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">52<span>MS</span></h1>
+              <h4 class="summary-label">MS</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">3</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">3</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct danger">0% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="68844ecf-3f96-4560-aa83-468830f2dabd" class="suite has-suites">
+            <h3 class="suite-title">Array</h3>
+            <h5 class="suite-filename">/test/main.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="5cd2d811-c199-46c7-ad3e-0b5ef17c261e" class="suite has-tests has-failed">
+            <h3 class="suite-title">#indexOf()</h3>
+            <h5 class="suite-filename">/test/main.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="5cd2d811-c199-46c7-ad3e-0b5ef17c261e" class="suite-chart" width="50" height="50" data-total-passes="0" data-total-failures="1" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">2 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">0</li>
+                <li class="suite-summary-item failed">1</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#5cd2d811-c199-46c7-ad3e-0b5ef17c261e-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="5cd2d811-c199-46c7-ad3e-0b5ef17c261e-test-list" class="list-group test-list collapse in">
+                    <div id="95c52630-b4f3-4d35-9af0-725062550c44" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return -1 when the value is not present
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#95c52630-b4f3-4d35-9af0-725062550c44 > .test-code.collapse">Code</button>
+              <span class="test-duration ">2 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected 200 to equal 400
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#95c52630-b4f3-4d35-9af0-725062550c44 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-comment">//assert.equal(-1, [1,2,3].indexOf(5));</span><br><span class="hljs-comment">//assert.equal(-1, [1,2,3].indexOf(0));</span><br>    	assert.equal(<span class="hljs-number">200</span>, <span class="hljs-number">400</span>);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected 200 to equal 400<br>    at Context.&lt;anonymous&gt; (test/main.js:11:13)</code></pre>
+          </div>
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="5337663a-8ecd-4b8d-94f0-d8d19fee0be8" class="suite has-suites">
+            <h3 class="suite-title">Hello World Server</h3>
+            <h5 class="suite-filename">/test/test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="28760400-cb9c-45fc-bc78-825d0ca40dba" class="suite has-tests has-failed">
+            <h3 class="suite-title">GET /</h3>
+            <h5 class="suite-filename">/test/test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="28760400-cb9c-45fc-bc78-825d0ca40dba" class="suite-chart" width="50" height="50" data-total-passes="0" data-total-failures="2" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">0</li>
+                <li class="suite-summary-item failed">2</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#28760400-cb9c-45fc-bc78-825d0ca40dba-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="28760400-cb9c-45fc-bc78-825d0ca40dba-test-list" class="list-group test-list collapse in">
+                    <div id="10dbf440-7553-4d7e-9ee5-cfaea8f14922" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              returns status code 200
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#10dbf440-7553-4d7e-9ee5-cfaea8f14922 > .test-code.collapse">Code</button>
+              <span class="test-duration ">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">TypeError: Cannot read property &#x27;statusCode&#x27; of undefined
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#10dbf440-7553-4d7e-9ee5-cfaea8f14922 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request.get(base_url,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error,response,body</span>)</span>{<br>	<span class="hljs-comment">//expect(response.statusCode).toBe(200);</span><br>	<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"response code is"</span>+response.statusCode);<br>	assert.equal(<span class="hljs-number">200</span>, response.statusCode);<br>	done();		<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small"><span class="hljs-built_in">TypeError</span>: Cannot read property <span class="hljs-string">'statusCode'</span> <span class="hljs-keyword">of</span> <span class="hljs-literal">undefined</span><br>    at Request._callback (test/test.js:<span class="hljs-number">13</span>:<span class="hljs-number">43</span>)<br>    at self.callback (node_modules/request/request.js:<span class="hljs-number">200</span>:<span class="hljs-number">22</span>)<br>    at Request.onRequestError (node_modules/request/request.js:<span class="hljs-number">831</span>:<span class="hljs-number">8</span>)<br>    at Socket.socketErrorListener (_http_client.js:<span class="hljs-number">295</span>:<span class="hljs-number">9</span>)<br>    at emitErrorNT (net.js:<span class="hljs-number">1250</span>:<span class="hljs-number">8</span>)</code></pre>
+          </div>
+        </div>            <div id="5e29b943-98c4-43a9-a2ba-152e1d389342" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              returns Hello World
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#5e29b943-98c4-43a9-a2ba-152e1d389342 > .test-code.collapse">Code</button>
+              <span class="test-duration ">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: &#x27;Hello World&#x27; == undefined
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#5e29b943-98c4-43a9-a2ba-152e1d389342 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request.get(base_url, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{<br>        <span class="hljs-comment">//expect(body).toBe("Hello World");</span><br>        assert.equal(<span class="hljs-string">"Hello World"</span>, body);<br>        <span class="hljs-comment">//helloWorld.closeServer();</span><br>        done();<br>      });</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: <span class="hljs-string">'Hello World'</span> == <span class="hljs-literal">undefined</span><br>    at Request._callback (test/test.js:<span class="hljs-number">21</span>:<span class="hljs-number">17</span>)<br>    at self.callback (node_modules/request/request.js:<span class="hljs-number">200</span>:<span class="hljs-number">22</span>)<br>    at Request.onRequestError (node_modules/request/request.js:<span class="hljs-number">831</span>:<span class="hljs-number">8</span>)<br>    at Socket.socketErrorListener (_http_client.js:<span class="hljs-number">295</span>:<span class="hljs-number">9</span>)<br>    at emitErrorNT (net.js:<span class="hljs-number">1250</span>:<span class="hljs-number">8</span>)</code></pre>
+          </div>
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2016.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>

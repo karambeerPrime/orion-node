@@ -1,0 +1,37 @@
+
+
+  Array
+    #indexOf()
+      1) should return -1 when the value is not present
+
+  Hello World Server
+    GET /
+      2) returns status code 200
+      3) returns Hello World
+
+
+  0 passing (52ms)
+  3 failing
+
+  1) Array #indexOf() should return -1 when the value is not present:
+     AssertionError: expected 200 to equal 400
+      at Context.<anonymous> (test/main.js:11:13)
+
+  2) Hello World Server GET / returns status code 200:
+     Uncaught TypeError: Cannot read property 'statusCode' of undefined
+      at Request._callback (test/test.js:13:43)
+      at self.callback (node_modules/request/request.js:200:22)
+      at Request.onRequestError (node_modules/request/request.js:831:8)
+      at Socket.socketErrorListener (_http_client.js:295:9)
+      at emitErrorNT (net.js:1250:8)
+
+  3) Hello World Server GET / returns Hello World:
+     Uncaught AssertionError: 'Hello World' == undefined
+      at Request._callback (test/test.js:21:17)
+      at self.callback (node_modules/request/request.js:200:22)
+      at Request.onRequestError (node_modules/request/request.js:831:8)
+      at Socket.socketErrorListener (_http_client.js:295:9)
+      at emitErrorNT (net.js:1250:8)
+
+
+
